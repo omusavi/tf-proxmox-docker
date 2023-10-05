@@ -17,6 +17,7 @@ RUN apt-get update && apt-get install -y \
     terraform \
     && rm -rf /var/lib/apt/lists/*
 
+ENV TF_LOG=DEBUG
 COPY . /opt/tf-proxmox-docker
 
 WORKDIR /opt/tf-proxmox-docker
