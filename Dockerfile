@@ -22,5 +22,6 @@ COPY . /opt/tf-proxmox-docker
 
 WORKDIR /opt/tf-proxmox-docker
 
+RUN wget https://cloud-images.ubuntu.com/jammy/current/jammy-server-cloudimg-amd64.img
 RUN terraform init
 ENTRYPOINT ["terraform", "apply"]

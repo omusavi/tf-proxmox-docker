@@ -22,5 +22,5 @@ variable "node_name" {
 variable "image_path" {
   type        = string
   description = "Paths to the image to download"
-  default     = "https://cloud-images.ubuntu.com/jammy/current/jammy-server-cloudimg-amd64.img"
+  default     = "jammy-server-cloudimg-amd64.img"
 }
